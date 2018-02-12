@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head><title>About</title>
+	<link href="output.css" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
+</script>
+</head>
+
+<body>
+	<header>
+		<nav class="home"><a class="home" href="Homepage.html">HOME</a></nav>
+		<nav class="home"><a class="home" href="faq.html">ABOUT</a></nav>
+		<nav class="logo"><a href="Homepage.html"><img class="logo2" src="mylogo.png"></a></nav>
+		<nav class="home"><a href="photos.html" class="home">PHOTOS</a></nav>
+		<nav class="home"><a href="videos.html" class="home">VIDEOS</a></nav>
+	</header>
+	<div id="menu" class="menu">
+		<nav class="about"><a class="about" href="#About">About Me.</a></nav>
+		<hr />
+		<nav class="faq"><a class="faq" href="#FAQ">F.A.Q.</a></nav>
+		<nav class="subpoints"><a class="subpoints" href="#Gear">Gear.</a></nav>
+		<nav class="subpoints"><a class="subpoints" href="#Tools">Editing Tools.</a></nav>
+		<nav class="subpointsend"><a class="subpointsend" href="#Media">Social Media.</a></nav>
+	</div>
+	<div class="grid">
+		<p id="About" class="headings">It all started with...</p>
+		<p class="content">...camera. Back in 2013 or something I've started taking photos. Now, 4 years later, I consider photography one of my main passions. Somewhere around 2016 I've started shooting videos as well. My goal is to share the beauty and my vision of the world with others.</p>
+		<p class="pic1"><img class="pic1" src="1.jpg"></p>
+		<p id="FAQ" class="headings2">F.A.Q.</p>
+		<p class="content2">This is a short F.A.Q. for you not to ask typical questions.</p>
+		<p class="pic4"><img class="pic4" src="4.jpg"></p>
+		<p id="Gear" class="headings3">Gear.</p>
+		<p class="content3">I shoot most of my photos and videos using Panasonic Lumix GH3 body, coupled with Helios 44-2 lens. Other than that, I use kit lens, which is Lumix 14-42mm f/3.5-5.6. I'm pretty happy with the result, so I won't switch or upgrade anything in the nearest future.</p>
+		<p class="pic2"><img class="pic2" src="2.jpg"></p>
+		<p id="Tools" class="headings4">Editing Tools.</p>
+		<p class="content4">I edit all my photos using Adobe Lightroom and Photoshop. For video editing I use Adobe Premiere Pro. However, I also use a special tool called IWLTBAP LUT Generator to color grade my videos using Adobe Lightroom. It's a great tool and I can't recommend it enough!</p>
+		<p class="pic3"><img class="pic3" src="3.jpg"></p>
+		<p id="Media" class="headings5">Social Media.</p>
+		<p class="content5">You can find me on most social media platforms! Find me on <a>Instagram</a>, <a>Flickr</a>, <a>Facebook</a>, <a>Twitter</a>.</p>
+	</div>
+	<footer>2017, Michael Ustinov</footer>
+</body>
